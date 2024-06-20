@@ -7,8 +7,9 @@ tags:
   - CSS
   - Astro
   - Vite
-imgUrl: '../../assets/astro.jpeg'
+imgUrl: '/src/assets/astro.jpeg'
 layout: ../../layouts/BlogPost.astro
+category: Notebook
 ---
 
 ## Deorum petiit ignis
