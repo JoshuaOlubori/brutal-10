@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import { nodePolyfills } from 'vite-plugin-node-polyfills'
 import sitemap from '@astrojs/sitemap';
 import UnoCSS from 'unocss/astro';
 import react from "@astrojs/react";
@@ -14,6 +15,9 @@ export default defineConfig({
   vite: {
     optimizeDeps: {
       exclude: ['@resvg/resvg-js']
-    }
+    },
+    plugins: [
+      nodePolyfills(),
+    ]
   }
 });
